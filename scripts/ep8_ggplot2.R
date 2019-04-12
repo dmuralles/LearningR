@@ -81,3 +81,13 @@ starts.with <-substr(gapminder$country, start=1, stop=1)
 #countries that start with a and start with z
 az.countries <- gapminder[starts.with %in% c("A", "Z"),]
 View(az.countries)
+
+#initiate ggplot
+#adding line plot layer
+#facet wrap took the above formula as its argument, denoted by ~
+#this tells R to draw panel for each unique value
+#in country column of gapminder dataset
+
+ggplot(data=az.countries, aes(x=year, y=lifeExp, color=continent)) +
+  geom_line()+
+  facet_wrap( ~ country) #facet wrap
