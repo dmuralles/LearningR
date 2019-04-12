@@ -39,3 +39,20 @@ tail(gapminder, n=3)
 #viewing the  lines in the middle of the data file, use brackets
 gapminder[850:870,]
 dim(gapminder[850:870,])
+
+#Challenge 3
+#a factor is a something that is listed, a non-numerical number or integral
+#a list is a series of factors
+#an integer - whole number
+#a numeric has decimals...
+
+
+
+
+
+
+
+
+
+
+str(gapminder)
